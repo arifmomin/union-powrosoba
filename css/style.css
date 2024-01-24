@@ -97,6 +97,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol{
 }
 .header_button{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -142,6 +143,12 @@ h1,h2,h3,h4,h5,h6,p,ul,ol{
     font-size: 16px;
     font-weight: 400;
     font-family: var(--bengali-serif);
+    color: #000;
+    transition: all linear .3s;
+}
+.btn:hover{
+    color: #fff;
+    background: var(--brand_color);
 }
 .from{
     margin-top: 20px;
@@ -151,12 +158,13 @@ h1,h2,h3,h4,h5,h6,p,ul,ol{
     align-items: end;
 }
 .log_in_box{
-    width: 596px;
+    width: 600px;
     padding: 18px 22px 18px 18px;
     border-radius: 6px;
     background: transparent;
     border: 1px solid #198754;
     display: flex;
+    flex-wrap: wrap;
     align-items: start;
     gap: 15px;
 }
@@ -183,6 +191,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol{
     font-weight: 400;
     font-family: var(--roboto);
     color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
+    text-decoration: underline;
 }
 .log_in_btn button{
     width: 65px;
@@ -231,11 +240,12 @@ h1,h2,h3,h4,h5,h6,p,ul,ol{
     top: 99%;
     left: 0%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     opacity: 0;
     visibility: hidden;
     transition: all linear .3s;
-    z-index: 99;
+    z-index: 999;
 }
 .navbar-nav .nav-item:hover .nav_hover {
     visibility: visible !important;
@@ -261,13 +271,13 @@ h1,h2,h3,h4,h5,h6,p,ul,ol{
     background: #fff;
 }
 .banner_img img{
-    width: 966px !important;
+    width: 966px;
 }
 .prev{
     font-size: 36px;
     position: absolute;
     top: 36%;
-    left: 9%;
+    left: 8%;
     color: #fff;
     z-index: 99;
 }
@@ -285,7 +295,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol{
     font-family: var(--bengali-serif);
     color: #fff;
     padding: 5px;
-    background: #198754;
+    background: green;
 }
 .img_item{
     display: block;
@@ -310,11 +320,11 @@ h1,h2,h3,h4,h5,h6,p,ul,ol{
 .banner_col:hover{
     transform: scale(1.1);
 }
-.banner_col .banner_img{
+.banner_col .banner_item_img{
     display: flex;
     justify-content: center;
 } 
-.banner_col .banner_img img{
+.banner_col .banner_item_img img{
     width: 50px !important;
 }
 .banner_col p{
@@ -394,7 +404,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol{
     gap: 5px;
     margin-top: 20px;
 }
-.channel_link img{
+.channel_link{
     width: 360px !important;
 }
 .person_col h2{
@@ -429,12 +439,10 @@ h1,h2,h3,h4,h5,h6,p,ul,ol{
     margin-top: 5px;
     margin-bottom: 40px;
 }
-.tv_channel_list img{
-    width: 306px !important;
-}
-.tv_channel_list{
-    border-radius: 10px;
-    overflow: hidden;
+.tv_channel_list a:first-child{
+    margin-bottom: 10px !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .tv_channel_list a{
     padding: 10px 0px;
@@ -450,6 +458,9 @@ h1,h2,h3,h4,h5,h6,p,ul,ol{
     border-top: 10px solid #fff;
     border-bottom: 10px solid #fff;
     border-color: #01c01a;
+}
+.tv_channel_list img{
+    width: 306px !important;
 }
 .hotline_number h2{
     font-size: 18px;
@@ -645,7 +656,13 @@ h1,h2,h3,h4,h5,h6,p,ul,ol{
     font-family: var(--bengali-serif);
     color: #000;
 }
-
+.copyright_col .wbst_link{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--roboto);
+    color: green;
+    text-decoration: underline;
+}
 
 
 
